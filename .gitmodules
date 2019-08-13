@@ -1,0 +1,15 @@
+[submodule "boatd-opencpn"]
+	path = boatd-opencpn
+	url = https://github.com/colinsauze/boatd-opencpn.git
+[submodule "sailsd"]
+	path = sailsd
+	url = https://github.com/sails-simulator/sailsd.git
+[submodule "simulator-behaviour"]
+	path = simulator-behaviour
+	url = https://github.com/abersailbot/simulator-behaviour.git
+[submodule "sails-boatd-driver"]
+	path = sails-boatd-driver
+	url = https://github.com/colinsauze/sails-boatd-driver.git
+[submodule "boatd"]
+	path = boatd
+	url = https://github.com/colinsauze/boatd.git
