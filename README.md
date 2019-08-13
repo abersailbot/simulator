@@ -14,12 +14,13 @@ Python 2.7 or 3.x
 
 Checkout this repository and its submodules
 
-git clone --recursive https://github.com/abersailbot/simulator
+`git clone --recursive https://github.com/abersailbot/simulator`
 
 ### Compile sails
 
-cd sails
-make
+`cd sails`
+
+`make`
 
 ### Install python dependencies
 
@@ -29,8 +30,9 @@ Install Anaconda from www.anaconda.org
 
 Anaconda has its own copy of Python (and many other packages), its huge but probably has more up to date packages than your OS.
 
-conda create -n boatd python=3.7 anaconda
-conda activate boatd-sim
+`conda create -n boatd python=3.7 anaconda`
+
+`conda activate boatd-sim`
 
 #### Using Virtualenv (optional)
 
