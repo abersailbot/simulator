@@ -18,7 +18,7 @@ Checkout this repository and its submodules
 
 ### Compile sails
 
-`cd sails`
+`cd sailsd`
 
 `make`
 
@@ -40,7 +40,13 @@ Anaconda has its own copy of Python (and many other packages), its huge but prob
 
 Using a virtual env is a lighter weight method of isolating your Python configuration.
 
-<complete instructions>
+`python3 -m venv simulator-env`
+
+or for python2
+
+`python -m virtualenv simulator-env`
+
+`source simulator-env/bin/activate`
 
 #### Installing Packages
 
