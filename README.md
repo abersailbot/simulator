@@ -8,6 +8,9 @@ This package uses the sails simulator and boatd to simulate a robot sailing.
 
 Python 2.7 or 3.x
 
+For sails-ui 
+
+libgirepository1.0-dev
 
 
 ### Checkout Code
@@ -18,7 +21,7 @@ Checkout this repository and its submodules
 
 ### Compile sails
 
-`cd sails`
+`cd sailsd`
 
 `make`
 
@@ -40,11 +43,17 @@ Anaconda has its own copy of Python (and many other packages), its huge but prob
 
 Using a virtual env is a lighter weight method of isolating your Python configuration.
 
-<complete instructions>
+`python3 -m venv simulator-env`
+
+or for python2
+
+`python -m virtualenv simulator-env`
+
+`source simulator-env/bin/activate`
 
 #### Installing Packages
 
-```pip install python-boatdclient python-sailsd```
+```pip install python-boatdclient python-sailsd gobject PyGObject```
 
 ### Install boatd as a python package
 
@@ -66,5 +75,7 @@ Three components must be launched:
 2. Boatd 
 3. The behaviour to control the simulated boat via boatd
 
-The script run.sh will launch all three of these.
+Optionally you can launch the sails-ui graphical interface.
+
+The script run.sh will launch all four of these.
 
