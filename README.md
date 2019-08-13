@@ -29,7 +29,7 @@ Install Anaconda from www.anaconda.org
 
 Anaconda has its own copy of Python (and many other packages), its huge but probably has more up to date packages than your OS.
 
-conda create env boatd-sim
+conda create -n boatd python=3.7 anaconda
 conda activate boatd-sim
 
 #### Using Virtualenv (optional)
@@ -42,12 +42,13 @@ Using a virtual env is a lighter weight method of isolating your Python configur
 
 #### Installing Packages
 
-pip install python-boatdclient python-sailsd
+```pip install python-boatdclient python-sailsd```
 
 ### Install boatd as a python package
 
-cd boatd
-python setup.py install
+`cd boatd`
+
+`python setup.py install`
 
 ### Configure boatd port
 
