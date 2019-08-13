@@ -4,12 +4,16 @@
 [submodule "sailsd"]
 	path = sailsd
 	url = https://github.com/sails-simulator/sailsd.git
+	branch = master
 [submodule "simulator-behaviour"]
 	path = simulator-behaviour
 	url = https://github.com/abersailbot/simulator-behaviour.git
+	branch = master
 [submodule "sails-boatd-driver"]
 	path = sails-boatd-driver
 	url = https://github.com/colinsauze/sails-boatd-driver.git
+	branch = master
 [submodule "boatd"]
 	path = boatd
 	url = https://github.com/colinsauze/boatd.git
+	branch = master
