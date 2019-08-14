@@ -35,7 +35,11 @@ Anaconda has its own copy of Python (and many other packages), its huge but prob
 
 `conda create -n boatd python=3.7 anaconda`
 
-`conda activate boatd-sim`
+`conda activate boatd`
+
+`conda install -c conda-forge jansson`
+
+`conda install -c conda-forge pygobject`
 
 #### Using Virtualenv (optional)
 
