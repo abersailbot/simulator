@@ -49,6 +49,8 @@ Using a virtual env is a lighter weight method of isolating your Python configur
 
 `python3 -m venv simulator-env`
 
+`source simulator-env/bin/activate`
+
 or for python2
 
 `python -m virtualenv simulator-env`
