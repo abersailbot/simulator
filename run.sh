@@ -1,14 +1,11 @@
+echo "Starting sailsd simulator"
 sailsd/sailsd > /dev/null &
 sleep 1
+echo "Setting sail's position and wind"
 ./init_sails.sh
+echo "Starting boatd"
 boatd/bin/boatd boatd.yml &
 sleep 5
-boatdctl behaviour-start example 
+#boatdctl behaviour-start example 
+echo "Starting sails-UI"
 sails-ui/sails-ui
-#boatd-opencpn/boatd-opencpn 127.0.0.1:2223 10111 &
-#python recvBoatData.py
-#kill `ps a | grep "boatd.yml" | grep -v grep | awk '{print $1}'`
-#killall sailsd
-#kill `ps a | grep "boatd-opencpn 127.0.0.1:2223 10111" | grep -v grep | awk '{print $1}'`
-#kill `ps a | grep "python simulator-behaviour/looped-waypoint-behaviour" | grep -v grep | awk '{print $1}'`
-
