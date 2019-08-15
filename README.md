@@ -85,3 +85,43 @@ Optionally you can launch the sails-ui graphical interface.
 
 The script run.sh will launch all four of these.
 
+
+### Running with Singularity
+
+Install Singularity, see https://sylabs.io/guides/3.0/user-guide/installation.html for instructions.
+
+Download the container:
+
+`singularity pull shub://abersailbot/simulator:latest`
+
+Running the container:
+
+`singularity run abersailbot-simulator-master-latest.simg`
+
+You can either run the behaviour inside another container:
+
+singularity exec abersailbot-simulator-master-latest.simg /opt/simulator/simulator-behaviour/waypoint-behaviour
+
+Or execute your own behaviour outside the container. Note you'll have to change boatd-client to use port 2223 by editing 
+
+Edit boatd_client.py in your Python library directory and change:
+
+class Boatd(object):                                                                                                                                                                                                                          
+    def __init__(self, host='localhost', port= 2222):  
+
+to
+
+class Boatd(object):                                                                                                                                                                                                                          
+    def __init__(self, host='localhost', port= 2223):
+
+Or run the fix_port.sh script in the root directory of this repository.
+
+
+### Running with Docker
+
+TODO
+
+## Stopping everything
+
+Run the script stop.sh 
+
