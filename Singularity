@@ -15,7 +15,7 @@ From:ubuntu:18.04
     apt-get -y install software-properties-common
     apt-get update
     apt-get install -y libjansson-dev python-gi-cairo build-essential python-pip git pkg-config build-essential libjansson-dev netcat psmisc
-    pip3 install python-boatdclient python-sailsd pynmea2
+    pip install python-sailsd python-boatd
 
     cd /opt
 
@@ -34,7 +34,6 @@ From:ubuntu:18.04
     #change boatdclient to port 2223
     ./set_port.sh
 
-
 %runscript
-    cd /simulator/
+    cd /opt/simulator/
     ./run.sh
