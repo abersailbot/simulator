@@ -1,3 +1,4 @@
+#!/bin/sh
 echo "Starting sailsd simulator"
 sailsd/sailsd > /dev/null &
 sleep 1
