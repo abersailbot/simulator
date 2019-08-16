@@ -16,6 +16,7 @@ RUN apt-get update; \
     cd ..; \
     ./set_port.sh
 
+WORKDIR /opt/simulator
 ENTRYPOINT ["/opt/simulator/run.sh"]
 
 EXPOSE 2223
