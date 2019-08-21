@@ -17,6 +17,6 @@ RUN apt-get update; \
     ./set_port.sh
 
 WORKDIR /opt/simulator
-ENTRYPOINT ["/opt/simulator/run.sh"]
+ENTRYPOINT ["/opt/simulator/run-docker.sh"]
 
 EXPOSE 2223
