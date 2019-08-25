@@ -15,7 +15,7 @@
 	branch = master
 [submodule "boatd"]
 	path = boatd
-	url = https://github.com/colinsauze/boatd.git
+	url = https://github.com/abersailbot/boatd.git
 	branch = master
 [submodule "sails-ui"]
 	path = sails-ui
