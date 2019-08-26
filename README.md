@@ -6,6 +6,8 @@ This package uses the sails simulator and boatd to simulate a robot sailing.
 
 ### Pre-requisites
 
+libjansson-dev
+
 Python 2.7 or 3.x
 
 For sails-ui 
