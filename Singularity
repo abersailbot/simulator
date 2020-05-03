@@ -14,7 +14,7 @@ From:ubuntu:18.04
     apt-get update
     apt-get -y install software-properties-common
     apt-get update
-    apt-get install -y libjansson-dev python3-gi-cairo python3-gi gir1.2-gtk-3.0 build-essential python3-pip git pkg-config build-essential libjansson-dev netcat psmisc python3-yaml
+    apt-get install -y libjansson-dev python3-gi-cairo python3-gi gir1.2-gtk-3.0 build-essential python3-pip git pkg-config build-essential libjansson-dev netcat psmisc python3-yaml python3-numpy
     pip3 install python-sailsd python-boatdclient
 
     cd /opt
